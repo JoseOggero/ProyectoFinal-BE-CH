@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Panel de Administrador</title>
+</head>
+<body>
+  <h1>Panel de Administrador</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Tipo de Cuenta (Rol)</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% users.forEach(user => { %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= user.accountType %></td>
+          <td>
+            <a href="/admin/edit/<%= user._id %>">Editar</a>
+            <a href="/admin/delete/<%= user._id %>">Eliminar</a>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Panel de Administrador</title>
+</head>
+<body>
+  <h1>Panel de Administrador</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Tipo de Cuenta (Rol)</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% users.forEach(user => { %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= user.accountType %></td>
+          <td>
+            <a href="/admin/edit/<%= user._id %>">Editar</a>
+            <a href="/admin/delete/<%= user._id %>">Eliminar</a>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
